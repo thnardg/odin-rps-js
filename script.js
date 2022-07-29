@@ -2,7 +2,7 @@
 function playRound(){
     
     // Get player option, make it lowercase, and store it in a variable:
-    const playerOptions = prompt("Rock, Paper or Scissors?");
+    const playerOptions = //prompt("Rock, Paper or Scissors?");
     let playerSelection = playerOptions.toLowerCase();
     console.log(playerSelection);
 
