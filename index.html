@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div></div>
-        <div>
-            <div class="score-container">
-                <h1 class="score">
-                    Score:
-                    <br>
-                    0 x 0
-                </h1>
-            </div>
-
-            <div class="display">
-                <div class="user-choice"></div>
-                <div class="pc-choice"></div>
-            </div>
-
-            <div class="play-container">
-                <h2 class="options">
-                    Rock, Paper or Scissors?
-                </h2>
-                <div class="user-play">
-                    <div class="rock">
-                        <button type="button"><img src="assets/3.png"></button>
-                    </div>
-                    <div class="paper">
-                        <button type="button"><img src="assets/5.png"></button>
-                    </div>
-                    <div class="scissors">
-                        <button type="button"><img src="assets/7.png"></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-section">
-                <p class="win">You Won!</p>
-                <button class="btn">Play Again</button>
-            </div>
-
-        </div> 
-
-        <div class="footer">
-            <p>
-                Made for The Odin Project &copy;<br>
-                Coded by <a href="https://github.com/thnardg">thnardg</a>
-            </p>
+      <div></div>
+      <div>
+        <div class="score-container">
+          <h1 class="score">
+            Score:
+            <br />
+            <p id="points">0 x 0</p>
+          </h1>
         </div>
+
+        <div class="display">
+          <div class="user-choice" id="user-display">
+            <img src="assets/r1.png" />
+          </div>
+          <div class="pc-choice" id="pc-display">
+            <img src="assets/r2.png" />
+          </div>
+        </div>
+
+        <div class="play-container">
+          <h2 class="options">Rock, Paper or Scissors?</h2>
+          <div class="user-play">
+            <div class="rock">
+              <button id="rock-btn"><img src="assets/r1.png" /></button>
+            </div>
+            <div class="paper">
+              <button id="paper-btn"><img src="assets/p1.png" /></button>
+            </div>
+            <div class="scissors">
+              <button id="scissors-btn"><img src="assets/s1.png" /></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-section">
+          <p id="win-msg">You Won!</p>
+          <button id="restart-btn">Play Again</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Made for The Odin Project &copy; by
+          <a href="https://github.com/thnardg">thnardg</a>
+        </p>
+      </div>
     </div>
-</body> 
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
