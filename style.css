@@ -35,6 +35,11 @@ p {
   color: #f4f4f4;
 }
 
+.points {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;

@@ -8,3 +8,9 @@ const displayPc = document.getElementById("pc-display");
 
 const userScore = document.getElementById("user-score");
 const pcScore = document.getElementById("pc-score");
+
+/* SETUP NEW GAME - Clean scores and display */
+window.onload = newGameSetup();
+function newGameSetup() {
+  displayUser.innerHTML = "";
+}
