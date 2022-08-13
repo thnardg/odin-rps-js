@@ -9,8 +9,21 @@ const displayPc = document.getElementById("pc-display");
 const userScore = document.getElementById("user-score");
 const pcScore = document.getElementById("pc-score");
 
-/* SETUP NEW GAME - Clean scores and display */
 window.onload = newGameSetup();
+
+restart.addEventListener("click", () => {
+  newGameSetup();
+});
+
+/* SETUP NEW GAME - Clean scores and display */
 function newGameSetup() {
-  displayUser.innerHTML = "";
+  let playerScore = parseInt(0);
+  let computerScore = parseInt(0);
+  let round = parseInt(0);
+  console.log("\x1b[36m%s\x1b[0m", "A new game has started!");
+  //TODO change display class to hide image inside
+}
+
+function countRounds() {
+  round += 1;
 }
