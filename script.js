@@ -1,3 +1,4 @@
+// FIRST VERSION - CONSOLE ONLY //
 // Function for Each Round:
 function playRound() {
   // Get player option, make it lowercase, and store it in a variable:
