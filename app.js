@@ -13,16 +13,32 @@ const restartGame = document.getElementById("restart-btn");
 const displayUser = document.getElementById("user-display");
 const displayPc = document.getElementById("pc-display");
 
-const userScore = document.getElementById("user-score");
-const pcScore = document.getElementById("pc-score");
-
 const resultMessage = document.getElementById("result-msg");
+const points = document.getElementById("points");
 
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
 let round = parseInt(0);
 
 window.onload = newGameSetup();
+
+rock.addEventListener("click", () => {
+  //Display rock on player side.
+  displayUser.style.backgroundImage = "url('assets/r1.png')";
+  //Call computer play function.
+});
+
+paper.addEventListener("click", () => {
+  //Display paper on player side.
+  displayUser.style.backgroundImage = "url('assets/p1.png')";
+  //Call computer play function.
+});
+
+scissors.addEventListener("click", () => {
+  //Display scissors on player side.
+  displayUser.style.backgroundImage = "url('assets/s1.png')";
+  //Call computer play function.
+});
 
 restartGame.addEventListener("click", () => {
   newGameSetup();
@@ -33,10 +49,9 @@ function newGameSetup() {
   playerScore = parseInt(0);
   computerScore = parseInt(0);
   round = parseInt(0);
+  displayUser.style.backgroundImage = "none";
+  points.innerHTML = `${playerScore} x ${computerScore}`;
   console.log(newGameMsg);
-  console.log(tieMsg);
-  console.log(winMsg);
-  console.log(loseMsg);
 
   //TODO change display class to hide image inside
 }
@@ -48,7 +63,22 @@ function countRounds() {
 
 function computerPlay() {
   const computerOptions = ["rock", "paper", "scissors"];
-  return computerOptions[Math.floor(Math.random() * computerOptions.length)];
+  let pcChoice =
+    computerOptions[Math.floor(Math.random() * computerOptions.length)];
+  switch (pcChoice) {
+    case computerOptions[0]:
+      displayPc.style.backgroundImage = "url('assets/r2.png')";
+      break;
+    case computerOptions[1]:
+      displayPc.style.backgroundImage = "url('assets/p2.png')";
+      break;
+    case computerOptions[2]:
+      displayPc.style.backgroundImage = "url('assets/s2.png')";
+      break;
+    default:
+      displayPc.style.backgroundImage = "none";
+  }
+  return pcChoice;
 }
 
 function playRound() {
@@ -65,6 +95,7 @@ function playRound() {
   } else if (playerSelection === rock) {
     if (computerSelection === computerOptions[2]) {
       playerScore++;
+      points.innerHTML = `${playerScore} x ${computerScore}`;
       console.log(winMsg);
       return win;
     } else {
@@ -74,6 +105,7 @@ function playRound() {
   } else if (playerSelection === paper) {
     if (computerSelection === computerOptions[0]) {
       playerScore++;
+      points.innerHTML = `${playerScore} x ${computerScore}`;
       console.log(winMsg);
       return win;
     } else {
@@ -83,11 +115,13 @@ function playRound() {
   } else if (playerSelection === scissors) {
     if (computerSelection === computerOptions[1]) {
       playerScore++;
+      points.innerHTML = `${playerScore} x ${computerScore}`;
       console.log(winMsg);
       return win;
     } else {
       computerScore++;
       console.log(loseMsg);
+      points.innerHTML = `${playerScore} x ${computerScore}`;
       return lose;
     }
   }
