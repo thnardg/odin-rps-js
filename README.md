@@ -2,6 +2,7 @@
 
 Implementation of a simple game of rock, paper and scissors made for The Odin Project - [Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors).<br>
 This exercise uses only HTML, CSS and JavaScript.<br>
+Live version can be checked [here](https://thnardg.github.io/rockpaperscissorsJS/).
 
 ### This repository has two JS files:
 
