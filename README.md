@@ -4,8 +4,7 @@ Implementation of a simple game of rock, paper and scissors made for The Odin Pr
 This exercise uses only HTML, CSS and JavaScript.<br>
 Live version can be checked [here](https://thnardg.github.io/rockpaperscissorsJS/).
 
-### This repository has two JS files:
-
+** This repository has two JS files:**<br>
 - _script.js_: the first stage of the project and first version of the game. In this stage the game is only played via console commands.
 - _app.js_: the second and final stage of the project. The interface was added and the code has been tweaked to work better with the DOM. Every step of the game is also being displayed on the console.
 
