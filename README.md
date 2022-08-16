@@ -13,6 +13,7 @@ This exercise uses only HTML, CSS and JavaScript.<br>
 - Improved knowledge of functions and how they interact.
 - Learned how to stylize the console log text by changing their colors.
 - Deepened knowledge of DOM manipulation.
+- Practiced the use of git branches.
 
 **Credit for assets used:**
 
