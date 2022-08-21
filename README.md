@@ -15,6 +15,8 @@ Live version can be checked [here](https://thnardg.github.io/odin-rps-js/).
 - Deepened knowledge of DOM manipulation.
 - Practiced the use of git branches.
 
+<img src="https://raw.githubusercontent.com/thnardg/odin-rps-js/main/assets/preview.png" alt="Preview">
+
 **Credit for assets used:**
 
 - Canva
